@@ -57,3 +57,25 @@ void tekanEnter() {
     getchar(); // buang newline
     getchar(); // tunggu enter
 }
+// Fungsi 2: Split Bill
+void splitBill() {
+    float total;
+    int orang;
+
+    printf("\n-- Split Bill / Patungan --\n");
+
+    printf("Masukkan total tagihan: ");
+    scanf("%f", &total);
+
+    printf("Masukkan jumlah orang: ");
+    scanf("%d", &orang);
+
+    if (orang <= 0) {
+        printf("Jumlah orang harus lebih dari 0!\n");
+        return;
+    }
+
+    printf("Setiap orang membayar: Rp %.2f\n", total / orang);
+
+    tekanEnter();
+}
