@@ -73,6 +73,23 @@ void kalkulatorDiskon() {
     tekanEnter();
 }
 
+// FUNGSI 4: SISA UANG
+void sisaUangHarian() {
+    float uang, pengeluaran;
+
+    printf("\n-- Sisa Uang Harian --\n");
+
+    printf("Masukkan uang saku hari ini: ");
+    scanf("%f", &uang);
+
+    printf("Masukkan total pengeluaran: ");
+    scanf("%f", &pengeluaran);
+
+    printf("Sisa uang hari ini: Rp %.2f\n", uang - pengeluaran);
+
+    tekanEnter();
+}
+
 // FUNGSI TAMBAHAN
 void tekanEnter() {
     printf("\nTekan ENTER untuk kembali ke menu...");
