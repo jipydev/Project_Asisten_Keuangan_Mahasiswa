@@ -64,7 +64,7 @@ void splitBill() {
 
     printf("\n-- Split Bill / Patungan --\n");
 
-    printf("Masukkan total tagihan: "); //masukin total tagihan
+    printf("Masukkan total tagihan: "); 
     scanf("%f", &total);
 
     printf("Masukkan jumlah orang: ");
