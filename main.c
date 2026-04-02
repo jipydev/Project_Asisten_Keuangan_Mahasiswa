@@ -79,3 +79,27 @@ void tekanEnter() {
     getchar(); // buang newline
     getchar(); // tunggu enter
 }
+
+// FUNGSI 3: BUNGA TABUNGAN
+void bungaTabungan() {
+    float saldo, bunga, hasil;
+
+    printf("\n-- Bunga Tabungan Sederhana --\n");
+
+    printf("Masukkan saldo awal: ");
+    scanf("%f", &saldo);
+
+    printf("Masukkan bunga (%% per bulan): ");
+    scanf("%f", &bunga);
+
+    if (bunga < 0) {
+        printf("Bunga tidak valid!\n");
+        return;
+    }
+
+    hasil = saldo + (saldo * bunga / 100);
+
+    printf("Total saldo setelah bunga: Rp %.2f\n", hasil);
+
+    tekanEnter();
+}
